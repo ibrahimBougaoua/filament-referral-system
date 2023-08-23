@@ -2,9 +2,9 @@
 
 namespace IbrahimBougaoua\FilamentReferralSystem\Tests;
 
+use IbrahimBougaoua\FilamentReferralSystem\FilamentReferralSystemServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use IbrahimBougaoua\FilamentReferralSystem\FilamentReferralSystemServiceProvider;
 
 class TestCase extends Orchestra
 {

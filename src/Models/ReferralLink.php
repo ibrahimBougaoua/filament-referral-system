@@ -16,7 +16,7 @@ class ReferralLink extends Model
         'code',
         'referral_program_id',
         'user_id',
-    ];    
+    ];
 
     protected static function boot()
     {
@@ -27,20 +27,20 @@ class ReferralLink extends Model
 
     private function generateUuidCode()
     {
-        $this->code = (string)Uuid::uuid1();
+        $this->code = (string) Uuid::uuid1();
     }
 
     public static function getReferral($user, $program)
     {
         return static::firstOrCreate([
             'user_id' => $user->id,
-            'referral_program_id' => $program->id
+            'referral_program_id' => $program->id,
         ]);
     }
 
     public function getLinkAttribute()
     {
-        return url($this->program->uri) . '?ref=' . $this->code;
+        return url($this->program->uri).'?ref='.$this->code;
     }
 
     public function user()

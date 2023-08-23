@@ -2,9 +2,9 @@
 
 namespace IbrahimBougaoua\FilamentReferralSystem;
 
+use IbrahimBougaoua\FilamentReferralSystem\Commands\FilamentReferralSystemCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use IbrahimBougaoua\FilamentReferralSystem\Commands\FilamentReferralSystemCommand;
 
 class FilamentReferralSystemServiceProvider extends PackageServiceProvider
 {
