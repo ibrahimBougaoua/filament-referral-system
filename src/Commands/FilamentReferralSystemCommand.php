@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace IbrahimBougaoua\FilamentReferralSystem\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentReferralSystemCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-referral-system';
 
     public $description = 'My command';
 
